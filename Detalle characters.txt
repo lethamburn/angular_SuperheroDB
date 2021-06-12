@@ -1,0 +1,40 @@
+<div class="character-container">
+  <figure *ngFor="let character of characters" class="character-figure">
+    <h3>{{ character.name }}</h3>
+    <ul>
+      <h4>Biography</h4>
+      <li>Full name: {{ character.biography.fullName }}</li>
+      <li>Alias: {{ character.biography.aliases }}</li>
+      <li>Place of Birth: {{ character.biography.placeOfBirth }}</li>
+      <li>Alignment: {{ character.biography.alignment }}</li>
+      <li>Occupation: {{ character.work.occupation }}</li>
+      <ul>
+        <h4>Appearance</h4>
+        <li>Gender: {{ character.appearance.gender }}</li>
+        <li>Race: {{ character.appearance.race }}</li>
+        <li>Height: {{ character.appearance.height[0] }}</li>
+        <li>Weight: {{ character.appearance.weight[0] }}</li>
+        <li>Eye color: {{ character.appearance.eyeColor }}</li>
+        <li>Hair color: {{ character.appearance.hairColor }}</li>
+      </ul>
+      <ul>
+        <h4>Power Stats</h4>
+        <li>Intelligence: {{ character.powerstats.intelligence }}</li>
+        <li>Strenght: {{ character.powerstats.strenght }}</li>
+        <li>Speed: {{ character.powerstats.speed }}</li>
+        <li>Durability: {{ character.powerstats.durability }}</li>
+        <li>Power: {{ character.powerstats.power }}</li>
+        <li>Combat: {{ character.powerstats.combat }}</li>
+      </ul>
+      <ul>
+        <h4>Connections</h4>
+        <li>Group Affiliation: {{ character.connections.groupAffiliation }}</li>
+        <li>Relatives: {{ character.connections.relatives }}</li>
+      </ul>
+
+      <li>First Appearance: {{ character.biography.firstAppearance }}</li>
+      <li>Publisher: {{ character.biography.publisher }}</li>
+    </ul>
+    <img src="{{ character.images.md }}" alt="" />
+  </figure>
+</div>

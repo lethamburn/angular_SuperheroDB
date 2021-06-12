@@ -1,0 +1,19 @@
+body[data-theme='light']{
+  --color-primary:#BBF5FE;
+
+  --color-primary-active: #02B1C8;
+
+  --color-background: #4831D4;
+
+  color: #CCF381;
+}
+
+body[data-theme='dark']{
+  --color-primary:rgb(222, 0, 0);
+
+  --color-primary-active: rgb(212, 95, 0);
+
+  --color-background: #3a3a3a;
+
+  color: rgb(212, 95, 0);
+}
